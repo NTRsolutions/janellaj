@@ -54,6 +54,9 @@ private Button btn_next;
         }
     }
 
+
+
+
     private void settypeSpinneerValue() {
         String postal_address_array[] = {"I am Docter", "We're Pharmacy", "We'r Daignostic Lab"};
         String state_address_array[] = {"Andaman and Nicobar", "Andhra Pradesh", "Arunachal Pradesh","Assam","Bihar"};
