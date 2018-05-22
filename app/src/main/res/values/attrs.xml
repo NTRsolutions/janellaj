@@ -97,5 +97,12 @@
         <attr name="linePadding" format="dimension"/>
         <attr name="markerInCenter" format="boolean"/>
     </declare-styleable>
+
+    <declare-styleable name="TileView">
+        <attr name="imgHeight" format="dimension" />
+        <attr name="imgWidth" format="dimension" />
+        <attr name="isCircularImg" format="boolean" />
+        <attr name="outerPadding" format="dimension" />
+    </declare-styleable>
 </resources>
 

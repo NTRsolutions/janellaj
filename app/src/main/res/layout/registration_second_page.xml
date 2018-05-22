@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_20dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_18dp"
+        android:layout_marginRight="@dimen/_18dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/specilization_nameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:popupBackground="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/medirno_nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp">
+
+            <EditText
+                android:id="@+id/medicalregiNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_information"
+                android:hint="Medical Registration number"
+                android:textSize="@dimen/_14dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/medicalNo_nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+        <Spinner
+            android:id="@+id/regicouncle_nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/expericne_nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp">
+
+            <EditText
+                android:id="@+id/experinceView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_information"
+                android:hint="Career Experince in Years"
+                android:textSize="@dimen/_14dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

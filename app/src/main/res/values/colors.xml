@@ -56,4 +56,43 @@
 
     <color name="buttocolor">#0866C6</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+
+    <color name="login_button">#31B2F7</color>
+    <color name="google_color">#db3236</color>
+    <color name="fb_color">#3b5998</color>
+    <color name="lightBlack">#808080</color>
+
+    <color name="bluelightbutton">#18BFCC</color>
+    <color name="purplebutton">#73309B</color>
+    <color name="centercolor">#5A5C98</color>
+
+    <color name="bgcolor">#C2C2C2</color>
+
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
 </resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <com.janelaaj.component.CircleImageView
+                android:id="@+id/logoImage"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/headertitel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titlename"
+                android:layout_marginTop="@dimen/_5dp"
+                android:textAlignment="center"
+                android:textSize="@dimen/_30dp"
+               />
+
+            <TextView
+                android:id="@+id/headersubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PARTNER"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:elevation="@dimen/_5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/otpsendTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:text="OTP send To  +91 9456790649"
+                android:textAlignment="center"
+                android:textSize="@dimen/_14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30dp"
+                android:layout_marginRight="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/passcodeCharOne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="1"
+                    android:nextFocusLeft="@+id/passcodeCharOne"
+                    android:nextFocusRight="@+id/passcodeCharTwo" />
+
+                <EditText
+                    android:id="@+id/passcodeCharTwo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="1"
+                    android:nextFocusLeft="@+id/passcodeCharOne"
+                    android:nextFocusRight="@+id/passcodeCharThree" />
+
+                <EditText
+                    android:id="@+id/passcodeCharThree"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="1"
+                    android:nextFocusLeft="@+id/passcodeCharTwo"
+                    android:nextFocusRight="@+id/passcodeCharFour" />
+
+                <EditText
+                    android:id="@+id/passcodeCharFour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="1"
+                    android:nextFocusLeft="@+id/passcodeCharThree"
+                    android:nextFocusRight="@+id/passcodeCharFour" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submitOTP"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_22dp"
+                android:background="@drawable/login_border"
+                android:minWidth="@dimen/_220dp"
+                android:text="Submit OTP"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_10dp">
+
+                <Button
+                    android:id="@+id/resendNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextborder"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_110dp"
+                    android:text="Re-Send OTP"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13dp" />
+
+                <Button
+                    android:id="@+id/chnageNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextborder"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_110dp"
+                    android:padding="@dimen/_5dp"
+                    android:text="Chnage Number"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

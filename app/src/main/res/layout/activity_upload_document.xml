@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15dp"
+        android:background="#fff"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="@dimen/_5dp"
+        card_view:elevation="@dimen/_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15dp"
+                android:text="Welcome to Dr. Anish"
+                android:textAlignment="center"
+                android:textSize="@dimen/_22dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:text="To proceed fruther,please Uploadthe follwoing Documnt for Varification"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16dp"
+                android:textStyle="normal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/headertitel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Aadhar Card/Voter ID/Passport"
+                    android:textSize="@dimen/_14dp"
+                    android:textStyle="normal" />
+
+                <com.janelaaj.component.CircleImageView
+                    android:id="@+id/logoImage"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:src="@drawable/logo" />
+
+
+                <ImageView
+                    android:id="@+id/headersubtitle"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10dp"
+                    android:src="@drawable/ic_information"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Medical Registration"
+                    android:textSize="@dimen/_14dp"
+                    android:textStyle="normal" />
+
+                <com.janelaaj.component.CircleImageView
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:src="@drawable/logo" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10dp"
+                    android:src="@drawable/ic_information"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Highest Qualification Degree"
+                    android:textSize="@dimen/_14dp"
+                    android:textStyle="normal" />
+
+                <com.janelaaj.component.CircleImageView
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:src="@drawable/logo" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10dp"
+                    android:src="@drawable/ic_information"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/login_border"
+                android:minWidth="@dimen/_130dp"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10dp"
+                android:elevation="@dimen/_5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="if any quries/issue then please feel free to reach us here"
+                    android:textSize="@dimen/_14dp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:text="We'll  be morethan happy to assit you"
+                    android:textSize="@dimen/_14dp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:text="Thanks Regards\n Team Jan Elaj"
+                    android:textSize="@dimen/_14dp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15dp"
+                    android:layout_marginRight="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_25dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_10dp">
+
+                    <Button
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_border"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_110dp"
+                        android:text="Edit Details"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13dp" />
+
+                    <Button
+                        android:id="@+id/exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_25dp"
+                        android:layout_marginRight="@dimen/_10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_border"
+                        android:gravity="center"
+                        android:minWidth="@dimen/_110dp"
+                        android:padding="@dimen/_5dp"
+                        android:text="Exit"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>
