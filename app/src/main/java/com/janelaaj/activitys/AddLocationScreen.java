@@ -52,8 +52,6 @@ private Button btn_next;
             Intent intent = new Intent(AddLocationScreen.this, ManageLocationActivity.class);
             startActivity(intent);
         }
-
-
     }
 
     private void settypeSpinneerValue() {
