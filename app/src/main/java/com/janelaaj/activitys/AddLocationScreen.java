@@ -23,8 +23,9 @@ public class AddLocationScreen extends AppCompatActivity implements View.OnClick
     private TextView headertitel, headersubtitle, codeTextView;
     private CircleImageView logoImage;
     View otpsendLayout;
-    Spinner selectOptionSpinneer,stateSpinneer;
-private Button btn_next;
+    Spinner selectOptionSpinneer, stateSpinneer;
+    private Button btn_next;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,11 +56,9 @@ private Button btn_next;
     }
 
 
-
-
     private void settypeSpinneerValue() {
         String postal_address_array[] = {"I am Docter", "We're Pharmacy", "We'r Daignostic Lab"};
-        String state_address_array[] = {"Andaman and Nicobar", "Andhra Pradesh", "Arunachal Pradesh","Assam","Bihar"};
+        String state_address_array[] = {"Andaman and Nicobar", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar"};
         ArrayAdapter<String> postalAdapter = new ArrayAdapter<String>(this, R.layout.spinner_row, postal_address_array);
         selectOptionSpinneer.setAdapter(postalAdapter);
         selectOptionSpinneer.setOnItemSelectedListener(new MyOnItemSelectedListener());

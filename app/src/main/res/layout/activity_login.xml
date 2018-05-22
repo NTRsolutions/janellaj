@@ -38,7 +38,7 @@
                 android:id="@+id/headersubtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PARTNER"
+                android:text="P A R T N E R"
                 android:textAlignment="center"
                 android:textSize="@dimen/_12dp" />
 
@@ -133,6 +133,7 @@
                 android:minWidth="@dimen/_220dp"
                 android:text="@string/login"
                 android:textAllCaps="false"
+                android:elevation="@dimen/_50dp"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/_17dp"
                 android:textStyle="bold" />

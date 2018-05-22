@@ -75,6 +75,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical|center"
                     android:text="+91"
+                    android:spinnerMode="dropdown"
                     android:textColor="@color/lightBlack"
                     android:textSize="@dimen/_15dp"
                     />

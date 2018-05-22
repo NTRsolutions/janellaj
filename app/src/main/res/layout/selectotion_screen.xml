@@ -49,6 +49,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:popupBackground="@color/white"
+                        android:spinnerMode="dropdown"
                         android:textColor="@color/lightBlack"
                         android:textSize="@dimen/_14dp"
                         android:textStyle="bold" />

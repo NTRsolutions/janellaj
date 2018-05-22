@@ -17,6 +17,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_16dp"
+            android:spinnerMode="dropdown"
             android:popupBackground="@color/white" />
 
         <View
@@ -44,6 +45,7 @@
             android:id="@+id/medicalNo_nameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
             android:layout_marginTop="@dimen/_20dp"
              />
         <View
@@ -55,6 +57,7 @@
             android:id="@+id/regicouncle_nameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
             android:layout_marginTop="@dimen/_20dp"
             />
         <View

@@ -40,7 +40,7 @@
                 android:id="@+id/headersubtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PARTNER"
+                android:text="P A R T N E R"
                 android:textAlignment="center"
                 android:textSize="@dimen/_12dp" />
 
