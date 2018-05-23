@@ -29,38 +29,40 @@
 
                 <Button
                     android:id="@+id/from"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="@dimen/_80dp"
+                    android:layout_width="@dimen/_60dp"
+                    android:layout_height="@dimen/_60dp"
                     android:layout_margin="@dimen/_10dp"
                     android:background="@drawable/circle_bg"
                     android:padding="@dimen/_10dp"
                     android:text="From"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_18dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                    android:textColor="@color/secondary_text"
+                  />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/_10dp"
                     android:padding="@dimen/_10dp"
                     android:src="@drawable/ic_information"
                     android:textAlignment="center"
                     android:textSize="@dimen/_18dp"
-                    android:textStyle="bold" />
+                   />
 
                 <Button
                     android:id="@+id/to"
-                    android:layout_width="@dimen/_80dp"
-                    android:layout_height="@dimen/_80dp"
+                    android:layout_width="@dimen/_60dp"
+                    android:layout_height="@dimen/_60dp"
                     android:layout_margin="@dimen/_10dp"
                     android:background="@drawable/circle_bg"
                     android:padding="@dimen/_10dp"
                     android:text="To"
+                    android:textColor="@color/secondary_text"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_18dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                  />
 
             </LinearLayout>
 
@@ -77,9 +79,11 @@
                 android:layout_marginTop="@dimen/_10dp"
                 android:gravity="center"
                 android:text="REPEAT"
+                android:textColor="@color/secondary_text"
+                android:theme="@style/togelTheme"
                 android:padding="@dimen/_10dp"
-                android:textSize="@dimen/_18dp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_12dp"
+              />
 
             <LinearLayout
                 android:id="@+id/weekNameLayout"
@@ -96,9 +100,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="SUN"
+                    android:background="@drawable/circle_bg"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                   />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -106,8 +111,8 @@
                     android:layout_weight="1"
                     android:text="MON"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                   />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,8 +120,8 @@
                     android:layout_weight="1"
                     android:text="TUE"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                  />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -124,8 +129,8 @@
                     android:layout_weight="1"
                     android:text="WED"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                   />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -133,8 +138,8 @@
                     android:layout_weight="1"
                     android:text="THU"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -142,8 +147,8 @@
                     android:layout_weight="1"
                     android:text="FRI"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                   />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -151,8 +156,8 @@
                     android:layout_weight="1"
                     android:text="SAT"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_12dp"
+                    />
 
 
             </LinearLayout>

@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.BackgroundColorSpan;
+import android.text.style.ImageSpan;
 import android.text.style.TextAppearanceSpan;
 import android.view.View;
 import android.widget.Button;
@@ -57,9 +58,11 @@ public class GoogleLoginActivity extends AppCompatActivity implements View.OnCli
         spannable.setSpan(backgroundColorSpan, 18, 25, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         connectTextView.setText(spannable);
 
+     /*   ImageSpan is = new ImageSpan(context, R.drawable.image);
+        SpannableString text = new SpannableString("Left  Right");
+        text.setSpan(is, 4, 4, 0);
 
-
-
+*/
         /*
 
         spannable.setSpan(new BackgroundColorSpan(Color.parseColor("#ffffff")), 18, 26,

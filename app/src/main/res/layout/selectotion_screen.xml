@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:background="@color/bgcolor"
     android:orientation="vertical">
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -48,9 +49,9 @@
                         android:id="@+id/selectOptionSpinneer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:popupBackground="@color/white"
                         android:spinnerMode="dropdown"
                         android:textColor="@color/lightBlack"
+                        android:tooltipText="Select an Option"
                         android:textSize="@dimen/_14dp"
                         android:textStyle="bold" />
 

@@ -25,13 +25,14 @@ public class TimmingEditActivity extends AppCompatActivity {
     ExpandableListView expListView;
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
-Button btn_home;
+    Button btn_home;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edittimelocation_screen);
         expListView = this.findViewById(R.id.lvExp);
-        btn_home=this.findViewById(R.id.btn_home);
+        btn_home = this.findViewById(R.id.btn_home);
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,6 +92,7 @@ Button btn_home;
             }
         });
     }
+
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
@@ -98,6 +100,8 @@ Button btn_home;
         // Adding child data
         listDataHeader.add("13:30-15:52");
         listDataHeader.add("10:55-04:01");
+        listDataHeader.add("9:30-15:52");
+        listDataHeader.add("6:55-04:01");
 
         // Adding child data
         List<String> top250 = new ArrayList<String>();
@@ -105,9 +109,15 @@ Button btn_home;
 
         List<String> nowShowing = new ArrayList<String>();
         nowShowing.add("The Conjuring");
+        List<String> item = new ArrayList<String>();
+        item.add("The Conjuring");
+        List<String> item2 = new ArrayList<String>();
+        item2.add("The Conjuring");
 
 
         listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
         listDataChild.put(listDataHeader.get(1), nowShowing);
+        listDataChild.put(listDataHeader.get(2), item);
+        listDataChild.put(listDataHeader.get(3), item2);
     }
 }

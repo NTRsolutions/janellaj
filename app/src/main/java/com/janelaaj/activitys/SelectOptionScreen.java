@@ -1,6 +1,7 @@
 package com.janelaaj.activitys;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -56,10 +57,24 @@ public class SelectOptionScreen extends AppCompatActivity implements View.OnClic
     }
 
     private void settypeSpinneerValue() {
-        String postal_address_array[] = {"Sector 1", "Sector 2", "Sector 3"};
+        String postal_address_array[] = {"Select Your Option","I own/rent/visit a Clinic/Hospital", "I'm available for Home Visits"};
         ArrayAdapter<String> postalAdapter = new ArrayAdapter<String>(this, R.layout.spinner_row, postal_address_array);
         selectOptionSpinneer.setAdapter(postalAdapter);
-        selectOptionSpinneer.setOnItemSelectedListener(new MyOnItemSelectedListener());
+        selectOptionSpinneer.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(position==0) {
+                    TextView textView = view.findViewById(R.id.cust_view);
+                    textView.setTextColor(Color.parseColor("#a3a3a3"));
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 
     }

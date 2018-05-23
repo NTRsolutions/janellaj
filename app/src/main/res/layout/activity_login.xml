@@ -28,17 +28,16 @@
                 android:id="@+id/headertitel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
                 android:text="@string/titlename"
                 android:textAlignment="center"
-                android:layout_marginTop="@dimen/_5dp"
-                android:textSize="@dimen/_30dp"
-                />
+                android:textSize="@dimen/_30dp" />
 
             <TextView
                 android:id="@+id/headersubtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="P A R T N E R"
+                android:text="@string/partner"
                 android:textAlignment="center"
                 android:textSize="@dimen/_12dp" />
 
@@ -51,7 +50,7 @@
             android:layout_marginBottom="@dimen/_2dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_26dp"
             android:orientation="vertical">
 
             <EditText
@@ -88,20 +87,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="@dimen/_30dp"
                 android:layout_marginLeft="@dimen/_40dp"
+                android:layout_marginRight="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_18dp"
                 android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_18dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/problemSiging"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/facebook_dark"
-                    android:text="Problem Signing In ?"
                     android:layout_marginRight="@dimen/_10dp"
+                    android:text="Problem Signing In ?"
                     android:textAlignment="center"
+                    android:textColor="@color/facebook_dark"
                     android:textSize="@dimen/_14dp" />
 
                 <View
@@ -116,8 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10dp"
-                    android:textColor="@color/facebook_dark"
                     android:text="SignUp?"
+                    android:textColor="@color/facebook_dark"
                     android:textSize="@dimen/_14dp" />
 
 
@@ -130,10 +129,10 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_22dp"
                 android:background="@drawable/login_border"
+                android:elevation="@dimen/_50dp"
                 android:minWidth="@dimen/_220dp"
                 android:text="@string/login"
                 android:textAllCaps="false"
-                android:elevation="@dimen/_50dp"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/_17dp"
                 android:textStyle="bold" />
@@ -151,13 +150,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:minHeight="@dimen/_50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_25dp"
                 android:gravity="center"
+                android:minHeight="@dimen/_50dp"
                 android:orientation="horizontal">
 
-                <Button
+                <LinearLayout
                     android:id="@+id/facebookButton"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_40dp"
@@ -165,14 +164,32 @@
                     android:layout_weight="1"
                     android:background="@drawable/edittextborder"
                     android:gravity="center"
-                    android:minWidth="@dimen/_150dp"
-                    android:text="facebook"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="@dimen/_17dp"
-                    android:textStyle="bold" />
+                    android:minWidth="@dimen/_150dp">
 
-                <Button
+                    <ImageView
+                        android:layout_width="@dimen/_60dp"
+                        android:layout_height="@dimen/_60dp"
+                        android:src="@drawable/facebook" />
+
+
+                </LinearLayout>
+
+                <!--   <Button
+                       android:id="@+id/facebookButton"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/_40dp"
+                       android:layout_gravity="center"
+                       android:layout_weight="1"
+                       android:background="@drawable/edittextborder"
+                       android:gravity="center"
+                       android:minWidth="@dimen/_150dp"
+                       android:text="facebook"
+                       android:textAllCaps="false"
+                       android:textColor="@color/colorPrimary"
+                       android:textSize="@dimen/_17dp"
+                       android:textStyle="bold" />-->
+
+            <!--    <Button
                     android:id="@+id/googleButton"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_40dp"
@@ -187,14 +204,31 @@
                     android:textAllCaps="false"
                     android:textColor="@color/google_color"
                     android:textSize="@dimen/_17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold" />-->
 
 
+                <LinearLayout
+                    android:id="@+id/googleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextborder"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_150dp"
+                    android:padding="@dimen/_5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_60dp"
+                        android:layout_height="@dimen/_60dp"
+                        android:src="@drawable/google" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
-
-
 
 
         </LinearLayout>

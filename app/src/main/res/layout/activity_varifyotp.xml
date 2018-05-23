@@ -34,8 +34,7 @@
                 android:text="@string/titlename"
                 android:layout_marginTop="@dimen/_5dp"
                 android:textAlignment="center"
-                android:textSize="@dimen/_30dp"
-               />
+                android:textSize="@dimen/_30dp" />
 
             <TextView
                 android:id="@+id/headersubtitle"
@@ -85,7 +84,8 @@
                     android:layout_margin="@dimen/_5dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:inputType="textNoSuggestions"
+                    android:inputType="number"
+                    android:elevation="@dimen/_15dp"
                     android:maxLength="1"
                     android:nextFocusLeft="@+id/passcodeCharOne"
                     android:nextFocusRight="@+id/passcodeCharTwo" />
@@ -97,7 +97,8 @@
                     android:layout_margin="@dimen/_5dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:inputType="textNoSuggestions"
+                    android:elevation="@dimen/_15dp"
+                    android:inputType="number"
                     android:maxLength="1"
                     android:nextFocusLeft="@+id/passcodeCharOne"
                     android:nextFocusRight="@+id/passcodeCharThree" />
@@ -108,8 +109,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_5dp"
                     android:layout_weight="1"
+                    android:elevation="@dimen/_15dp"
                     android:gravity="center"
-                    android:inputType="textNoSuggestions"
+                    android:inputType="number"
                     android:maxLength="1"
                     android:nextFocusLeft="@+id/passcodeCharTwo"
                     android:nextFocusRight="@+id/passcodeCharFour" />
@@ -121,7 +123,8 @@
                     android:layout_margin="@dimen/_5dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:inputType="textNoSuggestions"
+                    android:elevation="@dimen/_15dp"
+                    android:inputType="number"
                     android:maxLength="1"
                     android:nextFocusLeft="@+id/passcodeCharThree"
                     android:nextFocusRight="@+id/passcodeCharFour" />
@@ -139,6 +142,7 @@
                 android:background="@drawable/login_border"
                 android:minWidth="@dimen/_220dp"
                 android:text="Submit OTP"
+                android:elevation="@dimen/_15dp"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/_14dp"
@@ -149,6 +153,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_30dp"
+                android:elevation="@dimen/_10dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingBottom="@dimen/_10dp">
@@ -162,6 +167,7 @@
                     android:background="@drawable/edittextborder"
                     android:gravity="center"
                     android:minWidth="@dimen/_110dp"
+                    android:elevation="@dimen/_15dp"
                     android:text="Re-Send OTP"
                     android:textAllCaps="false"
                     android:textColor="@android:color/black"
@@ -172,13 +178,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_40dp"
                     android:layout_gravity="center"
+                    android:elevation="@dimen/_15dp"
                     android:layout_marginLeft="@dimen/_25dp"
                     android:layout_weight="1"
                     android:background="@drawable/edittextborder"
                     android:gravity="center"
                     android:minWidth="@dimen/_110dp"
                     android:padding="@dimen/_5dp"
-                    android:text="Chnage Number"
+                    android:text="Change Number"
                     android:textAllCaps="false"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/_13dp" />

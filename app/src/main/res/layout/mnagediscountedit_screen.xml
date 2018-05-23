@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#f4f4f4"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgcolor"
     android:orientation="vertical">
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,9 +37,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_10dp"
-                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_10dp"
                 android:text="Je Clicnic, Jasola Area, ND"
                 android:textAlignment="center"
+                android:textColor="#000"
                 android:textSize="@dimen/_18dp"
                 android:textStyle="bold" />
 
@@ -47,16 +49,19 @@
                 android:id="@+id/titledisc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
                 android:layout_margin="@dimen/_5dp"
                 android:layout_marginTop="@dimen/_15dp"
-                android:text="Je Clicnic, Jasola Area, ND"
+                android:text="You can Enable Discounts for any of your time slots for the above locations. Discounts  will be applicable only on the options that you select."
                 android:textAlignment="center"
                 android:textSize="@dimen/_14dp"
-                android:textStyle="bold" />
+              />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -65,17 +70,17 @@
                     android:layout_weight="1"
                     android:text="SUN"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_14dp"
+                   />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
                     android:text="MON"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_14dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -83,8 +88,7 @@
                     android:layout_weight="1"
                     android:text="TUE"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_14dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -92,8 +96,7 @@
                     android:layout_weight="1"
                     android:text="WED"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_14dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -101,8 +104,7 @@
                     android:layout_weight="1"
                     android:text="THU"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_14dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -110,8 +112,7 @@
                     android:layout_weight="1"
                     android:text="FRI"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_14dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -119,8 +120,7 @@
                     android:layout_weight="1"
                     android:text="SAT"
                     android:textAlignment="center"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_14dp"/>
 
 
             </LinearLayout>
@@ -132,6 +132,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/_10dp"
                 android:layout_weight="1"
+                android:dividerHeight="@dimen/_5dp"
+                android:groupIndicator="@null"
                 android:background="@drawable/expandable_selector"
                 android:cacheColorHint="@color/colorPrimary"
                 android:padding="@dimen/_5dp" />
@@ -147,8 +149,9 @@
                 android:layout_marginRight="@dimen/_10dp"
                 android:background="@drawable/login_border"
                 android:gravity="center"
+                android:textAllCaps="false"
                 android:minWidth="@dimen/_160dp"
-                android:text="Apply Discounts"
+                android:text="@string/applydiscount"
                 android:textAlignment="center"
                 android:textColor="@android:color/white" />
         </LinearLayout>

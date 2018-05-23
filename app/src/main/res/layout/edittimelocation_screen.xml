@@ -29,7 +29,7 @@
                 android:text="Manage Locations Timings"
                 android:textAlignment="center"
                 android:textSize="@dimen/_18dp"
-                android:textStyle="bold" />
+                />
 
 
             <TextView
@@ -41,11 +41,13 @@
                 android:text="Je Clicnic, Jasola Area, ND"
                 android:textAlignment="center"
                 android:textSize="@dimen/_18dp"
+                android:textColor="#000"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -55,61 +57,69 @@
                     android:text="SUN"
                     android:textAlignment="center"
                     android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    android:textColor="#000"
+                   />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
                     android:text="MON"
+                    android:gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:textColor="#000"
                     android:textAlignment="center"
                     android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="TUE"
+                    android:textColor="#000"
                     android:textAlignment="center"
                     android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="WED"
+                    android:textColor="#000"
                     android:textAlignment="center"
                     android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="THU"
+                    android:textColor="#000"
                     android:textAlignment="center"
                     android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="FRI"
+                    android:textColor="#000"
                     android:textAlignment="center"
                     android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="SAT"
+                    android:textColor="#000"
                     android:textAlignment="center"
                     android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                   />
 
 
             </LinearLayout>
@@ -120,9 +130,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/_10dp"
+                android:groupIndicator="@null"
                 android:layout_weight="1"
-                android:background="@drawable/expandable_selector"
-                android:cacheColorHint="@color/colorPrimary"
+                android:dividerHeight="@dimen/_5dp"
+                android:background="@android:color/transparent"
                 android:padding="@dimen/_5dp" />
 
 
@@ -137,7 +148,7 @@
                     android:layout_width="@dimen/_50dp"
                     android:layout_height="@dimen/_50dp"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_22dp"
                     android:background="@color/centercolor"
                     android:src="@drawable/ic_add"
                     app:backgroundTint="@color/bgcolor" />
@@ -154,6 +165,7 @@
                     android:gravity="center"
                     android:minWidth="@dimen/_160dp"
                     android:text="Save"
+                    android:textAllCaps="false"
                     android:textAlignment="center"
                     android:textColor="@android:color/white" />
 

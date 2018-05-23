@@ -32,63 +32,75 @@
 
         <EditText
             android:id="@+id/frommin"
+            android:textColor="@color/hint_grey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/frommin1"
             android:layout_width="wrap_content"
+            android:textColor="@color/hint_grey"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
+            android:textColor="@color/hint_grey"
             android:layout_height="wrap_content"
             android:text=":" />
 
         <EditText
             android:id="@+id/fromsec"
             android:layout_width="wrap_content"
+            android:textColor="@color/hint_grey"
             android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/fromsec1"
+            android:textColor="@color/hint_grey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
 
         <TextView
             android:layout_width="wrap_content"
+            android:textColor="@color/hint_grey"
             android:layout_height="wrap_content"
             android:text="-" />
 
         <EditText
             android:id="@+id/frommin2"
+            android:textColor="@color/hint_grey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/frommin3"
             android:layout_width="wrap_content"
+            android:textColor="@color/hint_grey"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
+            android:textColor="@color/hint_grey"
             android:layout_height="wrap_content"
             android:text=":" />
 
         <EditText
             android:id="@+id/fromsec2"
+            android:textColor="@color/hint_grey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/fromsec3"
             android:layout_width="wrap_content"
+            android:textColor="@color/hint_grey"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/hint_grey"
             android:text="HRS" />
 
     </LinearLayout>
@@ -98,7 +110,7 @@
         android:layout_width="@dimen/_20dp"
         android:layout_height="@dimen/_20dp"
         android:layout_gravity="center"
-        android:layout_marginRight="@dimen/_8dp"
+        android:layout_marginRight="@dimen/_18dp"
         android:gravity="center_horizontal"
         android:src="@drawable/ic_down_arrow"
         android:textColor="@color/lightBlack"
@@ -109,8 +121,8 @@
         android:layout_width="@dimen/_20dp"
         android:layout_height="@dimen/_20dp"
         android:layout_gravity="center"
-        android:layout_marginRight="@dimen/_8dp"
         android:gravity="center_horizontal"
+        android:layout_marginRight="@dimen/_18dp"
         android:src="@drawable/ic_up_arrow"
         android:textColor="@color/lightBlack"
         android:textSize="@dimen/_15dp"
@@ -121,6 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:padding="@dimen/_10dp"
         android:layout_marginRight="@dimen/_10dp"
         android:background="@drawable/ic_dustbin" />
 

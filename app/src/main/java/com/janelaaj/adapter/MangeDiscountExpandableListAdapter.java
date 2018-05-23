@@ -88,7 +88,7 @@ public class MangeDiscountExpandableListAdapter extends BaseExpandableListAdapte
             convertView = infalInflater.inflate(R.layout.mangedisedit_group, null);
         }
 
-        TextView lblListHeader = convertView.findViewById(R.id.lblListHeader);
+        final TextView lblListHeader = convertView.findViewById(R.id.lblListHeader);
         CheckBox checkdDiscount = convertView.findViewById(R.id.checkdDiscount);
         final LinearLayout listExpandLayout = convertView.findViewById(R.id.listExpandLayout);
         checkdDiscount.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -98,13 +98,15 @@ public class MangeDiscountExpandableListAdapter extends BaseExpandableListAdapte
                 // TODO Auto-generated method stub
                 if (buttonView.isChecked()) {
                     listExpandLayout.setBackgroundResource(R.drawable.login_border);
+                    lblListHeader.setTextColor(Color.parseColor("#ffffff"));
                 } else {
                     listExpandLayout.setBackgroundColor(Color.parseColor("#C2C2C2"));
+                    lblListHeader.setTextColor(Color.parseColor("#000000"));
                 }
 
             }
         });
-        lblListHeader.setTypeface(null, Typeface.BOLD);
+        //lblListHeader.setTypeface(null, Typeface.BOLD);
         lblListHeader.setText(headerTitle);
 
         return convertView;

@@ -46,14 +46,14 @@ public class SelectTYpeActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void settypeSpinneerValue() {
-        final String postal_address_array[] = {"I am...","I am Docter", "We're Pharmacy", "We'r Daignostic Lab"};
+        final String postal_address_array[] = {"I am...","I am Doctor", "We're Pharmacy", "We'r Daignostic Lab"};
         ArrayAdapter<String> postalAdapter = new ArrayAdapter<String>(this, R.layout.spinner_row, postal_address_array);
         typeSpinneer.setAdapter(postalAdapter);
         typeSpinneer.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String str = postal_address_array[position];
-                if (str.equals("I am Docter")) {
+                if (str.equals("I am Doctor")) {
                     Intent intent = new Intent(SelectTYpeActivity.this, ProfileRegistrationActivity.class);
                     startActivity(intent);
                 } else if (str.equals("We're Pharmacy")) {

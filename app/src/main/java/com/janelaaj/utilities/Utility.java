@@ -727,4 +727,20 @@ public class Utility {
         }
         return null;
     }
+
+    public static boolean isEmptyStr(final String _v) {
+        return _v == null || _v.trim().length() == 0 || _v.equalsIgnoreCase("null");
+    }
+
+    public static boolean isEmptyView(View view) {
+        return isEmptyStr(getTextFromView(view));
+    }
+
+    public static String getTextFromView(View view) {
+        return (view != null && view instanceof TextView) ? ((TextView) view).getText().toString().trim() : "";
+    }
+
+    public static boolean isNonEmptyStr(String _v) {
+        return !isEmptyStr(_v);
+    }
 }

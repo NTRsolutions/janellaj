@@ -18,13 +18,16 @@
         android:layout_weight="1"
         android:textColor="@color/primary_text"
         android:textSize="16dp"
-        android:textStyle="bold" />
+         />
 
     <CheckBox
         android:id="@+id/checkdDiscount"
         android:layout_width="wrap_content"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/_10dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:theme="@style/WhiteCheck"
         android:layout_marginRight="@dimen/_10dp" />
 
 

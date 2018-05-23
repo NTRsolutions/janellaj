@@ -3,6 +3,9 @@ package com.janelaaj.activitys;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,6 +13,11 @@ import android.widget.TextView;
 
 import com.janelaaj.R;
 import com.janelaaj.component.CircleImageView;
+import com.janelaaj.utilities.Utility;
+
+import static com.janelaaj.utilities.Utility.getTextFromView;
+import static com.janelaaj.utilities.Utility.isEmptyStr;
+import static com.janelaaj.utilities.Utility.isNonEmptyStr;
 
 
 public class VarifyOTPActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,6 +25,49 @@ public class VarifyOTPActivity extends AppCompatActivity implements View.OnClick
     private TextView headertitel, headersubtitle, otpsendTextView;
     private Button submitOTP, resendNo, chnageNo;
     private EditText passcodeCharOne, passcodeCharTwo, passcodeCharThree, passcodeCharFour;
+
+
+
+    View.OnKeyListener onKeyListener = new View.OnKeyListener() {
+        @Override
+        public boolean onKey(View v, int keyCode, KeyEvent event) {
+            if (keyCode == KeyEvent.KEYCODE_DEL) {
+                if (Utility.isEmptyView(v)) {
+                    View prevFocusView = findViewById(getCurrentFocus().getNextFocusLeftId());
+                    if (prevFocusView != null) {
+                        prevFocusView.requestFocus();
+                    }
+                }
+            }
+            return false;
+        }
+    };
+    TextWatcher passcodeTextWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            submitOTP.setEnabled(isNonEmptyStr(getPassword()));
+            if (getCurrentFocus() == null) {
+                return;
+            }
+            View nextFocusView = findViewById(getCurrentFocus().getNextFocusRightId());
+            View prevFocusView = findViewById(getCurrentFocus().getNextFocusLeftId());
+            if (isNonEmptyStr(s.toString()) && nextFocusView != null) {
+                nextFocusView.requestFocus();
+            } else if (isEmptyStr(s.toString()) && prevFocusView != null) {
+                prevFocusView.requestFocus();
+            }
+        }
+    };
     private CircleImageView logoImage;
 
 
@@ -48,6 +99,16 @@ public class VarifyOTPActivity extends AppCompatActivity implements View.OnClick
         this.resendNo.setOnClickListener(this);
         this.chnageNo.setOnClickListener(this);
 
+        passcodeCharOne.addTextChangedListener(passcodeTextWatcher);
+        passcodeCharTwo.addTextChangedListener(passcodeTextWatcher);
+        passcodeCharThree.addTextChangedListener(passcodeTextWatcher);
+        passcodeCharFour.addTextChangedListener(passcodeTextWatcher);
+
+        passcodeCharOne.setOnKeyListener(onKeyListener);
+        passcodeCharTwo.setOnKeyListener(onKeyListener);
+        passcodeCharThree.setOnKeyListener(onKeyListener);
+        passcodeCharFour.setOnKeyListener(onKeyListener);
+
 
     }
 
@@ -63,5 +124,10 @@ public class VarifyOTPActivity extends AppCompatActivity implements View.OnClick
             finish();
         }
 
+    }
+
+    private String getPassword() {
+        return getTextFromView(passcodeCharOne) + getTextFromView(passcodeCharTwo) +
+                getTextFromView(passcodeCharThree) + getTextFromView(passcodeCharFour);
     }
 }

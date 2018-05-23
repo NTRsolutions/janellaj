@@ -1,18 +1,25 @@
 package com.janelaaj.activitys;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.ExpandableListView.OnGroupClickListener;
 import android.widget.ExpandableListView.OnGroupCollapseListener;
 import android.widget.ExpandableListView.OnGroupExpandListener;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.janelaaj.R;
 import com.janelaaj.adapter.ServicesRateExpandableListAdapter;
+import com.janelaaj.utilities.FontManager;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,12 +31,25 @@ public class ServicesRatesEditActivity extends AppCompatActivity {
     ExpandableListView expListView;
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
+    LinearLayout listGroupLayout,addserviceLayout;
+    FloatingActionButton addlocation;
+    Button btn_save;
+    TextView rupeeIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.servicesrateedit_screen);
         expListView = this.findViewById(R.id.listExpandble);
+        listGroupLayout=this.findViewById(R.id.listGroupLayout);
+        addserviceLayout=this.findViewById(R.id.addserviceLayout);
+        listGroupLayout.setBackgroundResource(R.drawable.login_border);
+        addlocation=this.findViewById(R.id.addlocation);
+        btn_save=this.findViewById(R.id.btn_save);
+        rupeeIcon=this.findViewById(R.id.rupeeIcon);
+        Typeface fontawesome_font = FontManager.getFontTypefaceMaterialDesignIcons(ServicesRatesEditActivity.this, "fonts/fontawesome-webfont.ttf");
+        rupeeIcon.setTypeface(fontawesome_font);
+        rupeeIcon.setText(Html.fromHtml("&#xf156;"));
         prepareListData();
         listAdapter = new ServicesRateExpandableListAdapter(this, listDataHeader, listDataChild);
         expListView.setAdapter(listAdapter);
@@ -72,6 +92,19 @@ public class ServicesRatesEditActivity extends AppCompatActivity {
                                 childPosition), Toast.LENGTH_SHORT)
                         .show();
                 return false;
+            }
+        });
+
+        addlocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addserviceLayout.setVisibility(View.VISIBLE);
+            }
+        });
+        btn_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addserviceLayout.setVisibility(View.GONE);
             }
         });
     }

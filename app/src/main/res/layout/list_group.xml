@@ -3,8 +3,8 @@
     android:id="@+id/listGroupLayout"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@color/bgcolor"
     android:layout_margin="@dimen/_15dp"
+    android:background="@color/bgcolor"
     android:minHeight="@dimen/_40dp"
     android:orientation="horizontal">
 
@@ -17,34 +17,27 @@
         android:layout_marginLeft="@dimen/_10dp"
         android:layout_weight="1"
         android:textColor="@color/primary_text"
-        android:textSize="16dp"
+        android:textSize="@dimen/_12dp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/expand"
-        android:layout_width="@dimen/_20dp"
-        android:layout_height="@dimen/_20dp"
-        android:layout_marginRight="@dimen/_5dp"
-        android:src="@drawable/ic_down_arrow"
+        android:layout_width="@dimen/_18dp"
+        android:layout_height="@dimen/_18dp"
         android:layout_gravity="center"
+        android:layout_marginRight="@dimen/_10dp"
         android:gravity="center_horizontal"
-        android:textColor="@color/lightBlack"
-        android:textSize="@dimen/_15dp" />
+        android:src="@drawable/ic_down_arrow" />
 
     <ImageView
         android:id="@+id/collapse"
-        android:layout_width="@dimen/_20dp"
-        android:layout_height="@dimen/_20dp"
-        android:layout_marginRight="@dimen/_4dp"
-        android:src="@drawable/ic_up_arrow"
-        android:gravity="center_horizontal"
+        android:layout_width="@dimen/_18dp"
+        android:layout_height="@dimen/_18dp"
         android:layout_gravity="center"
-        android:textColor="@color/lightBlack"
-        android:textSize="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/ic_up_arrow"
         android:visibility="gone" />
-
-
-
 
 
 </LinearLayout>

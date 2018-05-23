@@ -80,12 +80,14 @@ public class ManageLocationActivity extends AppCompatActivity implements View.On
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("Top 250");
-        listDataHeader.add("Now Showing");
+        listDataHeader.add("JE Clinic,Jasola Area,ND");
+        listDataHeader.add("Max Clinic,Sartia Vihar ND");
+        listDataHeader.add("Sartia Vihar NMetro Stn ND");
+        listDataHeader.add("Sartia Vihar NMetro Stn ND");
 
         // Adding child data
         List<String> top250 = new ArrayList<String>();
-        top250.add("The Shawshank Redemption");
+        top250.add("The Shawshank Redemptio");
 
         List<String> nowShowing = new ArrayList<String>();
         nowShowing.add("The Conjuring");

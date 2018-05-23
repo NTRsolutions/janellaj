@@ -31,11 +31,11 @@
     <Switch
         android:id="@+id/switchy"
         android:layout_width="@dimen/_80dp"
-        android:layout_marginRight="@dimen/_10dp"
-        android:layout_gravity="center"
         android:layout_height="@dimen/_50dp"
-        android:checked="true" />
-
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/_10dp"
+        android:checked="true"
+        android:theme="@style/SCBSwitch" />
 
 
 </LinearLayout>

@@ -15,4 +15,7 @@
     <string name="login">Sign In</string>
 
     <string name="otpSendthisNo">Otp will be send to this number.</string>
+    <string name="servicesrate">Services &amp; Rates</string>
+    <string name="applydiscount">Apply My Discounts</string>
+    <string name="partner">P A R T N E R</string>
 </resources>

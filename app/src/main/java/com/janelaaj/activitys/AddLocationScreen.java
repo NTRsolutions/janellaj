@@ -57,8 +57,8 @@ public class AddLocationScreen extends AppCompatActivity implements View.OnClick
 
 
     private void settypeSpinneerValue() {
-        String postal_address_array[] = {"I am Docter", "We're Pharmacy", "We'r Daignostic Lab"};
-        String state_address_array[] = {"Andaman and Nicobar", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar"};
+        String postal_address_array[] = {"I am Doctor", "We're Pharmacy", "We'r Daignostic Lab"};
+        String state_address_array[] = {" Delhi","Andaman and Nicobar", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar"};
         ArrayAdapter<String> postalAdapter = new ArrayAdapter<String>(this, R.layout.spinner_row, postal_address_array);
         selectOptionSpinneer.setAdapter(postalAdapter);
         selectOptionSpinneer.setOnItemSelectedListener(new MyOnItemSelectedListener());
