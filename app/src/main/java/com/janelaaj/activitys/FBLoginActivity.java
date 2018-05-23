@@ -44,7 +44,7 @@ public class FBLoginActivity extends AppCompatActivity implements View.OnClickLi
         this.complFbRegistration = this.findViewById(R.id.complFbRegistration);
         this.complFbRegiLayout = this.findViewById(R.id.complFbRegiLayout);
 
-        String string = "Conneting To your \tFacebook\t Account";
+        String string = "Conneting To your Facebook Account";
         Spannable spannable = new SpannableString(string);
         ColorStateList blueColor = new ColorStateList(new int[][]{new int[]{}}, new int[]{Color.BLUE});
         TextAppearanceSpan textAppearanceSpan = new TextAppearanceSpan(null, Typeface.BOLD, -1, blueColor, null);
