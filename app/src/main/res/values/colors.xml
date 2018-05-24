@@ -69,7 +69,7 @@
     <color name="bgcolor">#C2C2C2</color>
 
 
-
+    <color name="graynew">#5D5D5D</color>
     <!-- dots active colors -->
     <color name="dot_light_screen1">#f98da5</color>
     <color name="dot_light_screen2">#8cf9eb</color>
