@@ -49,6 +49,9 @@ public class ManageLocationActivity extends AppCompatActivity implements View.On
         expListView.setOnGroupExpandListener(new OnGroupExpandListener() {
             @Override
             public void onGroupExpand(int groupPosition) {
+                expListView.setDividerHeight(R.dimen._10dp);
+                expListView.setDivider(getResources().getDrawable(android.R.color.transparent));
+
                 Toast.makeText(getApplicationContext(), listDataHeader.get(groupPosition) + " Expanded", Toast.LENGTH_SHORT).show();
             }
         });
@@ -56,6 +59,9 @@ public class ManageLocationActivity extends AppCompatActivity implements View.On
         expListView.setOnGroupCollapseListener(new OnGroupCollapseListener() {
             @Override
             public void onGroupCollapse(int groupPosition) {
+              /*  expListView.setDivider(getResources().getDrawable(R.drawable.expandable_selector));
+                expListView.setDividerHeight(10);*/
+
                 Toast.makeText(getApplicationContext(), listDataHeader.get(groupPosition) + " Collapsed", Toast.LENGTH_SHORT).show();
 
             }

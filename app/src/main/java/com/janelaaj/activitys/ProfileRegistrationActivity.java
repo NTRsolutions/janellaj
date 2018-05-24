@@ -38,7 +38,8 @@ public class ProfileRegistrationActivity extends AppCompatActivity {
     private Button btnNext;
     ImageView nexticon;
     private LinearLayout signupLayout, nextLayout;
-Button btn_signup;
+    Button btn_signup;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -177,6 +178,7 @@ Button btn_signup;
      */
     public class MyViewPagerAdapter extends PagerAdapter {
         private LayoutInflater layoutInflater;
+
         public MyViewPagerAdapter() {
         }
 

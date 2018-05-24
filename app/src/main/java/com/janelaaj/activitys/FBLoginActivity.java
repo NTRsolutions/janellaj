@@ -44,13 +44,13 @@ public class FBLoginActivity extends AppCompatActivity implements View.OnClickLi
         this.complFbRegistration = this.findViewById(R.id.complFbRegistration);
         this.complFbRegiLayout = this.findViewById(R.id.complFbRegiLayout);
 
-        String string = "Conneting To your Facebook Account";
+        String string = "Conneting To your  Facebook  Account";
         Spannable spannable = new SpannableString(string);
         ColorStateList blueColor = new ColorStateList(new int[][]{new int[]{}}, new int[]{Color.BLUE});
         TextAppearanceSpan textAppearanceSpan = new TextAppearanceSpan(null, Typeface.BOLD, -1, blueColor, null);
         BackgroundColorSpan backgroundColorSpan = new BackgroundColorSpan(Color.WHITE);
-        spannable.setSpan(textAppearanceSpan, 18, 27, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannable.setSpan(backgroundColorSpan, 18, 27, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable.setSpan(textAppearanceSpan, 17, 28, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable.setSpan(backgroundColorSpan, 17, 28, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         connectTextView.setText(spannable);
 
        // this.fbAccount.setOnClickListener(this);

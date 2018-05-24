@@ -55,8 +55,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
             android:elevation="@dimen/_5dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -71,20 +71,20 @@
             <Button
                 android:id="@+id/fbAccount"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_45dp"
+                android:layout_height="@dimen/_50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_15dp"
                 android:background="@drawable/login_fborder"
                 android:text="ABC Def"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/_17dp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_16dp"
+               />
 
             <LinearLayout
                 android:id="@+id/complFbRegiLayout"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_45dp"
+                android:layout_height="@dimen/_50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_30dp"
                 android:background="@drawable/login_border"
@@ -102,8 +102,8 @@
                     android:text="Complete Registration"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/_14dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_16dp"
+                  />
 
                 <ImageView
                     android:layout_width="wrap_content"

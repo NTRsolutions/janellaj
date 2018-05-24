@@ -8,13 +8,6 @@
         android:startColor="#18BFCC"
         android:type="linear" />
 
-
-
-
-    <stroke
-        android:width="@dimen/_1dp"
-        android:color="@color/fb_color" />
-
     <corners android:radius="@dimen/_5dp" />
 
 

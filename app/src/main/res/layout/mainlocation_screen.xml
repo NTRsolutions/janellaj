@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:card_view="http://schemas.android.com/tools"
     android:background="@color/bgcolor"
     android:orientation="vertical">
 
@@ -39,10 +39,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/_10dp"
                 android:layout_weight="1"
-                android:groupIndicator="@null"
-                android:dividerHeight="@dimen/_10dp"
-                android:background="@color/white"
-                />
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:groupIndicator="@null" />
 
 
             <LinearLayout
@@ -56,9 +55,9 @@
                     android:layout_width="@dimen/_50dp"
                     android:layout_height="@dimen/_50dp"
                     android:layout_gravity="center"
-                    android:elevation="@dimen/_15dp"
-                    android:layout_marginBottom="@dimen/_26dp"
+                    android:layout_marginBottom="@dimen/_22dp"
                     android:background="@color/centercolor"
+                    android:elevation="@dimen/_15dp"
                     android:src="@drawable/ic_add"
                     app:backgroundTint="@color/bgcolor" />
 
@@ -71,12 +70,12 @@
                     android:layout_marginLeft="@dimen/_15dp"
                     android:layout_marginRight="@dimen/_15dp"
                     android:background="@drawable/login_border"
-                    android:gravity="center"
                     android:elevation="@dimen/_15dp"
+                    android:gravity="center"
                     android:minWidth="@dimen/_160dp"
                     android:text="Home"
-                    android:textAllCaps="false"
                     android:textAlignment="center"
+                    android:textAllCaps="false"
                     android:textColor="@android:color/white" />
 
             </LinearLayout>

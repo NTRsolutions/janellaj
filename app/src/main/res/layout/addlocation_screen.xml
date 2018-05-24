@@ -39,7 +39,8 @@
                         android:text="Add Your Location"
                         android:textAlignment="center"
                         android:textColor="@color/primary_text"
-                        android:textSize="@dimen/_16dp" />
+                        android:textSize="@dimen/_18dp"
+                        android:textStyle="bold"/>
 
 
                     <LinearLayout
@@ -78,8 +79,8 @@
                             android:id="@+id/clihoName_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:drawableRight="@drawable/ic_information"
-                            android:hint="My Clinic/Hospital"
+                            android:hint="My Clinic/Hospital*"
+                            android:paddingRight="@dimen/_10dp"
                             android:textSize="@dimen/_14dp" />
                     </android.support.design.widget.TextInputLayout>
 
@@ -95,8 +96,8 @@
                             android:id="@+id/addLine1_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:drawableRight="@drawable/ic_information"
-                            android:hint="Address Line 1"
+                            android:hint="Address Line 1*"
+                            android:paddingRight="@dimen/_10dp"
                             android:textSize="@dimen/_14dp" />
                     </android.support.design.widget.TextInputLayout>
 
@@ -112,8 +113,8 @@
                             android:id="@+id/addLine2_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:drawableRight="@drawable/ic_information"
                             android:hint="Address Line 2"
+                            android:paddingRight="@dimen/_10dp"
                             android:textSize="@dimen/_14dp" />
                     </android.support.design.widget.TextInputLayout>
 
@@ -138,8 +139,7 @@
                                 android:id="@+id/village_name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:drawableRight="@drawable/ic_information"
-                                android:hint="VillageCity"
+                                android:hint="Village/City*"
                                 android:textSize="@dimen/_14dp" />
                         </android.support.design.widget.TextInputLayout>
 
@@ -157,6 +157,7 @@
                                 android:layout_height="wrap_content"
                                 android:drawableRight="@drawable/ic_information"
                                 android:hint="District"
+                                android:paddingRight="@dimen/_10dp"
                                 android:textSize="@dimen/_14dp" />
                         </android.support.design.widget.TextInputLayout>
 
@@ -195,8 +196,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="@dimen/_3dp"
-                                android:drawableRight="@drawable/ic_information"
-                                android:hint="Pincode"
+                                android:hint="Pincode*"
                                 android:textSize="@dimen/_14dp" />
                         </android.support.design.widget.TextInputLayout>
                     </LinearLayout>
@@ -226,25 +226,26 @@
                 </LinearLayout>
 
             </ScrollView>
-
-            <Button
-                android:id="@+id/btn_next"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_30dp"
+                android:gravity="center">
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="@dimen/_200dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/_10dp"
-                android:layout_marginLeft="@dimen/_20dp"
-                android:layout_marginRight="@dimen/_20dp"
-                android:layout_marginTop="@dimen/_20dp"
                 android:background="@drawable/login_border"
-                android:elevation="@dimen/_15dp"
+                android:elevation="@dimen/_20dp"
                 android:gravity="center"
                 android:minWidth="@dimen/_160dp"
-                android:text="Add the above Location"
+                android:textAllCaps="false"
+                android:text="Add this Location"
                 android:textAlignment="center"
                 android:textColor="@android:color/white" />
-
+            </LinearLayout>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

@@ -128,11 +128,14 @@
             <ExpandableListView
                 android:id="@+id/lvExp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_margin="@dimen/_10dp"
                 android:groupIndicator="@null"
                 android:layout_weight="1"
-                android:dividerHeight="@dimen/_5dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="@dimen/_10dp"
+                android:divider="@drawable/expandable_selector"
+                android:childDivider="@drawable/expandable_selector"
                 android:background="@android:color/transparent"
                 android:padding="@dimen/_5dp" />
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:card_view="http://schemas.android.com/tools"
     android:background="@color/bgcolor"
     android:orientation="vertical">
 
@@ -19,12 +19,12 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/_25dp">
+            android:layout_marginTop="@dimen/_20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10dp"
+                android:layout_margin="@dimen/_16dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -34,7 +34,8 @@
                     android:text="Select Your Option"
                     android:textAlignment="center"
                     android:textColor="@color/primary_text"
-                    android:textSize="@dimen/_16dp" />
+                    android:textSize="@dimen/_18dp"
+                    android:textStyle="bold"/>
 
 
                 <LinearLayout
@@ -51,9 +52,9 @@
                         android:layout_height="wrap_content"
                         android:spinnerMode="dropdown"
                         android:textColor="@color/lightBlack"
-                        android:tooltipText="Select an Option"
                         android:textSize="@dimen/_14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:tooltipText="Select an Option" />
 
                     <View
                         android:layout_width="match_parent"
@@ -65,41 +66,60 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_20dp"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="I own/rent/visit a Clinic/Hospitial i 'am available for Home VIsit"
-                        android:textAlignment="center"
+                        android:text="I own/rent/visit a Clinic/Hospitial"
                         android:textColor="@color/primary_text"
                         android:textSize="@dimen/_14dp" />
 
-                    <ImageView
-                        android:layout_width="@dimen/_20dp"
-                        android:layout_height="@dimen/_20dp"
-                        android:layout_margin="@dimen/_10dp"
-                        android:background="@drawable/ic_information" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="I'm available for Home VIsit"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/_14dp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20dp"
+                            android:layout_height="@dimen/_20dp"
+                            android:layout_marginLeft="@dimen/_30dp"
+                            android:background="@drawable/ic_information" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_addthislocation"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="@dimen/_20dp"
-                android:background="@drawable/login_border"
-                android:gravity="center"
-                android:text="Add this Location"
-                android:textAlignment="center"
-                android:textColor="@android:color/white" />
+                android:layout_margin="@dimen/_30dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_addthislocation"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_border"
+                    android:elevation="@dimen/_20dp"
+                    android:gravity="center"
+                    android:text="Add this Location"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_16dp" />
+            </LinearLayout>
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>

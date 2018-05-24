@@ -31,11 +31,10 @@
                 android:id="@+id/headertitel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/titlename"
                 android:layout_marginTop="@dimen/_5dp"
+                android:text="@string/titlename"
                 android:textAlignment="center"
-                android:textSize="@dimen/_30dp"
-               />
+                android:textSize="@dimen/_30dp" />
 
             <TextView
                 android:id="@+id/headersubtitle"
@@ -46,6 +45,7 @@
                 android:textSize="@dimen/_12dp" />
 
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50dp" />
@@ -71,20 +71,20 @@
             <Button
                 android:id="@+id/gplusAccount"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_45dp"
+                android:layout_height="@dimen/_50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_15dp"
                 android:background="@drawable/login_gborder"
                 android:text="ABC Def"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/_17dp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_16dp"
+                />
 
             <LinearLayout
                 android:id="@+id/complgplusRegiLayout"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_45dp"
+                android:layout_height="@dimen/_50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_30dp"
                 android:background="@drawable/login_border"
@@ -95,21 +95,22 @@
                     android:id="@+id/complgplusRegistration"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="left|center"
                     android:layout_marginLeft="@dimen/_12dp"
+                    android:layout_weight="1"
                     android:background="@android:color/transparent"
+                    android:gravity="left|center"
                     android:text="Complete Registration"
                     android:textAllCaps="false"
+                    android:elevation="@dimen/_60dp"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/_14dp"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/_16dp"
+                  />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_30dp"
                     android:layout_gravity="center"
-                 android:padding="@dimen/_5dp"
+                    android:padding="@dimen/_5dp"
                     android:src="@drawable/ic_rightarrow" />
             </LinearLayout>
 

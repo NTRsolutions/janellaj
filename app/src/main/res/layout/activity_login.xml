@@ -48,8 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_2dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="@dimen/_26dp"
             android:orientation="vertical">
 
@@ -60,7 +60,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/edittextborder"
                 android:ems="10"
-                android:hint="@string/email_id"
+                android:hint="email id"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textAlignment="center"
@@ -98,8 +98,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/_10dp"
-                    android:text="Problem Signing In ?"
+                    android:text="Problem Signing In?"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     android:textColor="@color/facebook_dark"
                     android:textSize="@dimen/_14dp" />
 
@@ -115,7 +116,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/_10dp"
-                    android:text="SignUp?"
+                    android:text="Sign Up"
+                    android:textStyle="bold"
                     android:textColor="@color/facebook_dark"
                     android:textSize="@dimen/_14dp" />
 
@@ -125,24 +127,24 @@
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_45dp"
+                android:layout_height="@dimen/_50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_22dp"
                 android:background="@drawable/login_border"
-                android:elevation="@dimen/_50dp"
+                android:elevation="@dimen/_60dp"
                 android:minWidth="@dimen/_220dp"
                 android:text="@string/login"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/_17dp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_16dp"
+               />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10dp"
-                android:text="Or"
+                android:text="or"
                 android:textAlignment="center"
                 android:textSize="@dimen/_18dp" />
 

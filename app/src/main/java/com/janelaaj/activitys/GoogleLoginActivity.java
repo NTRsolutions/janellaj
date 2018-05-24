@@ -49,13 +49,13 @@ public class GoogleLoginActivity extends AppCompatActivity implements View.OnCli
         //this.complgplusRegiLayout.setOnClickListener(this);
         this.complgplusRegistration.setOnClickListener(this);
 
-        String string = "Conneting To your Google account";
+        String string = "Conneting To your  Google  account";
         Spannable spannable = new SpannableString(string);
         ColorStateList blueColor = new ColorStateList(new int[][]{new int[]{}}, new int[]{Color.RED});
         TextAppearanceSpan textAppearanceSpan = new TextAppearanceSpan(null, Typeface.BOLD, -1, blueColor, null);
         BackgroundColorSpan backgroundColorSpan = new BackgroundColorSpan(Color.WHITE);
-        spannable.setSpan(textAppearanceSpan, 18, 25, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannable.setSpan(backgroundColorSpan, 18, 25, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable.setSpan(textAppearanceSpan, 19, 26, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable.setSpan(backgroundColorSpan, 19, 26, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         connectTextView.setText(spannable);
 
      /*   ImageSpan is = new ImageSpan(context, R.drawable.image);

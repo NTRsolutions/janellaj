@@ -120,11 +120,13 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView.findViewById(R.id.collapse).setVisibility(View.VISIBLE);
             convertView.findViewById(R.id.listGroupLayout).setBackgroundResource(R.drawable.login_border);
             lblListHeader.setTextColor(Color.parseColor("#ffffff"));
+            convertView.findViewById(R.id.viewSpace).setVisibility(View.GONE);
         } else {
             convertView.findViewById(R.id.expand).setVisibility(View.VISIBLE);
             convertView.findViewById(R.id.collapse).setVisibility(View.GONE);
-            convertView.findViewById(R.id.listGroupLayout).setBackgroundColor(Color.parseColor("#C2C2C2"));
+            convertView.findViewById(R.id.listGroupLayout).setBackgroundColor(Color.parseColor("#a3a3a3"));
             lblListHeader.setTextColor(Color.parseColor("#808080"));
+            convertView.findViewById(R.id.viewSpace).setVisibility(View.INVISIBLE);
 
         }
 

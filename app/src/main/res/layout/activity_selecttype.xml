@@ -78,7 +78,7 @@
                     android:tooltipText="I am..."
                     android:spinnerMode="dropdown"
                     android:textColor="@color/lightBlack"
-                    android:textSize="@dimen/_15dp" />
+                    android:textSize="@dimen/_16dp" />
 
             </LinearLayout>
 
